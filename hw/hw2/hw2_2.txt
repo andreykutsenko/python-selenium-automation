@@ -1,0 +1,26 @@
+#Amazon logo
+$x("//div[@id='a-page']//i[@aria-label='Amazon']")
+
+#Email field
+$x("//div[@id='authportal-main-section']//input[@id='ap_email']")
+
+#Continue button
+$x("//div[@id='authportal-main-section']//input[@id='continue']")
+
+#Need help link
+$x("//div[@id='authportal-main-section']//span[@class='a-expander-prompt']")
+
+#Forgot your password link
+$x("//div[@id='authportal-main-section']//a[@id='auth-fpp-link-bottom']")
+
+#Other issues with Sign-In link
+$x("//div[@id='authportal-main-section']//a[@id='ap-other-signin-issues-link']")
+
+#Create your Amazon account button
+$x("//div[@id='authportal-main-section']//a[@id='createAccountSubmit']")
+
+#Conditions of use link
+$x("//div[@id='legalTextRow']//a[text()='Conditions of Use']")
+
+#Privacy Notice link
+$x("//div[@id='legalTextRow']//a[text()='Privacy Notice']")
