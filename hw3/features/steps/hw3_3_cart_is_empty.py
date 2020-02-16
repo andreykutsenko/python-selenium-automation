@@ -15,4 +15,4 @@ def click_cart_button(context):
 
 @then ('Check results for {search_text} are shown')
 def check_shopping_cart_page(context, search_text):
-    assert 'Your Shopping Cart is empty' in context.driver.find_element(*HEADER_GOODS_PAGE_LOCATOR).text, f'Expected "Lego", but got {search_text}'
+    assert 'Your Shopping Cart is empty' in context.driver.find_element(*HEADER_GOODS_PAGE_LOCATOR).text, f'Expected "Your Shopping Cart is empty", but got {search_text}'
