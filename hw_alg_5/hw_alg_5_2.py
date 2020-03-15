@@ -13,4 +13,7 @@ def del_gap(string):
             result.append(item)
     return ' '.join(result)
 
+# def del_gap(string):
+#     return ' '.join(string.split())
+
 print(del_gap(string))
