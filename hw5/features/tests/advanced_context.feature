@@ -1,0 +1,17 @@
+# Created by kutsenko at 4/17/20
+Feature: Step executes other Steps
+
+   Scenario: Step by Step
+     Given I start a new game
+     When  I press the big red button
+      And  I duck
+      And  I duck
+      And  I duck
+      And  I duck
+      And  I duck
+     Then  I reach the next level
+
+   Scenario: Execute multiple Steps in middle Step
+     Given I start a new game
+     When  I do the same thing as before
+     Then  I reach the next level
