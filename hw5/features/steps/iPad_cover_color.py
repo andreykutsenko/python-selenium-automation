@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from behave import given, when, then
 from time import sleep
+from selenium.webdriver.support import expected_conditions as EC
 
 COLORS_BUTTON_LOCATOR = (By.CSS_SELECTOR, "#variation_color_name ul[role='radiogroup'] li")
 COLOR_TITLE_LOCATOR = (By.CSS_SELECTOR, "#variation_color_name .selection")
@@ -27,7 +28,8 @@ def color_has_description(context):
 
 @when('Add good to cart')
 def add_good_to_cart(context):
-    sleep(2)
+    # sleep(2)
+    context.wait.until_not(EC.element_to_be_clickable(ADD_CART_BUTTON))
     add_to_cart_button = context.driver.find_element(*ADD_CART_BUTTON)
     add_to_cart_button.click()
 
